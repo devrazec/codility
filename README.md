@@ -66,3 +66,7 @@ npm run build
 npm run start
 
 ````
+
+# Links
+
+https://www.favicon.cc/
