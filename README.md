@@ -46,9 +46,9 @@ npm i -D \
   eslint-config-prettier \
   eslint-plugin-prettier \
   @typescript-eslint/eslint-plugin \
-  @typescript-eslint/parser \
-  esbuild 
+  @typescript-eslint/parser
 
+npm i -D esbuild
 npm i -S express
 
 npm i -D @types/express
