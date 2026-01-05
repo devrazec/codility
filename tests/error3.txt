@@ -1,0 +1,64 @@
+Compilation successful.
+
+Server getAuthenticatedUserEmail should return user email based on token
+Output (stderr):
+MissingRequiredParameter: Missing required key 'Key' in params
+    at ParamValidator.fail (node_modules/aws-sdk/lib/param_validator.js:50:37)
+    at ParamValidator.validateStructure (node_modules/aws-sdk/lib/param_validator.js:62:14)
+    at ParamValidator.validateMember (node_modules/aws-sdk/lib/param_validator.js:89:21)
+    at ParamValidator.validate (node_modules/aws-sdk/lib/param_validator.js:34:10)
+    at Request.VALIDATE_PARAMETERS (node_modules/aws-sdk/lib/event_listeners.js:166:42)
+    at Request.callListeners (node_modules/aws-sdk/lib/sequential_executor.js:106:20)
+    at callNextListener (node_modules/aws-sdk/lib/sequential_executor.js:96:12)
+    at /task/node_modules/aws-sdk/lib/event_listeners.js:120:11
+    at finish (node_modules/aws-sdk/lib/config.js:396:7)
+    at getStaticCredentials (node_modules/aws-sdk/lib/config.js:423:7)
+WRONG ANSWER
+
+Server should return user notes
+Output (stderr):
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert(data.length > 0)
+
+    at Context.<anonymous> (handlers/index.test.js:58:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+WRONG ANSWER
+
+Server should limit returned notes to 10
+Output (stderr):
+AssertionError [ERR_ASSERTION]: Should return latest 10 notes, instead got: 0
+    at Context.<anonymous> (handlers/index.test.js:70:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+Output:
+Serverless: GET /notes (?: getNotes)
+WRONG ANSWER
+
+Server should sort returned notes by creation date
+Output (stderr):
+AssertionError [ERR_ASSERTION]: Expected results to be sorted by create_date in descending order
+    at Context.<anonymous> (handlers/index.test.js:84:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+Output:
+Serverless: GET /notes (?: getNotes)
+WRONG ANSWER
+
+Server Should return en error when token is invalid
+Output (stderr):
+AssertionError [ERR_ASSERTION]: Expected status code to be 403, got 200
+    at Context.<anonymous> (handlers/index.test.js:95:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+Output:
+Serverless: GET /notes (?: getNotes)
+WRONG ANSWER
+
+Server Should return an error if the Authentication token is malformed
+Output (stderr):
+AssertionError [ERR_ASSERTION]: Expected status code to be 400, got 200
+    at Context.<anonymous> (handlers/index.test.js:106:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+Output:
+Serverless: GET /notes (?: getNotes)
+WRONG ANSWER
+
+Detected some errors.

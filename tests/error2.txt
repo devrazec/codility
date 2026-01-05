@@ -1,0 +1,35 @@
+Compilation successful.
+
+Testing the City Weather solution Throws 'not a string' for non-String input
+OK
+
+Testing the City Weather solution Throws 'string is empty' for empty String input or contains only white-spaces
+OK
+
+Testing the City Weather solution Throws 'city not found' for a value parameter not found in the API
+Output (stderr):
+AssertionError: expected { status: 404, data: { ?(2) } } to equal 'city not found'
+    at file:///task/solution.test.js:54:26
+
+      + expected - actual:  failed to generate Mocha diff
+Output:
+Request URL: https://example.com/data/2.5/weather?units=metric&q=Seoul
+WRONG ANSWER
+
+Testing the City Weather solution Check if returns an 'object'
+Output (stderr):
+AssertionError: expected undefined to be an object
+    at file:///task/solution.test.js:61:14
+Output:
+Request URL: https://example.com/data/2.5/weather?units=metric&q=Paris
+WRONG ANSWER
+
+Testing the City Weather solution Check if returns weather data with correct values
+Output (stderr):
+TypeError: Cannot read properties of undefined (reading 'temp')
+    at file:///task/solution.test.js:70:19
+Output:
+Request URL: https://example.com/data/2.5/weather?units=metric&q=Washington
+WRONG ANSWER
+
+Detected some errors.

@@ -1,0 +1,159 @@
+Compilation successful.
+
+TestVerifyDeploymentServiceName
+OK
+
+TestVerifyDeploymentFrameworkVersionIsPresent
+Output (stderr):
+deployment_structure_test.go:41: 
+Error Trace:	deployment_structure_test.go:41
+Error:      	Expected value not to be nil.
+Test:       	TestVerifyDeploymentFrameworkVersionIsPresent
+Messages:   	Field is missing.
+WRONG ANSWER
+
+TestVerifyDeploymentFrameworkVersionIsCorrect
+Output (stderr):
+deployment_structure_test.go:52: 
+Error Trace:	deployment_structure_test.go:52
+Error:      	Should be true
+Test:       	TestVerifyDeploymentFrameworkVersionIsCorrect
+Messages:   	Missing lower version constraint.
+deployment_structure_test.go:53: 
+Error Trace:	deployment_structure_test.go:53
+Error:      	Should be true
+Test:       	TestVerifyDeploymentFrameworkVersionIsCorrect
+Messages:   	Missing upper version constraint.
+deployment_structure_test.go:54: 
+Error Trace:	deployment_structure_test.go:54
+Error:      	Should be true
+Test:       	TestVerifyDeploymentFrameworkVersionIsCorrect
+Messages:   	Not valid format of the versions constraints.
+WRONG ANSWER
+
+TestVerifyDeploymentEnvironmentSectionIsPresent
+Output (stderr):
+deployment_structure_test.go:58: 
+Error Trace:	deployment_structure_test.go:58
+Error:      	Expected value not to be nil.
+Test:       	TestVerifyDeploymentEnvironmentSectionIsPresent
+Messages:   	Section is missing.
+WRONG ANSWER
+
+TestVerifyDeploymentEnvironmentSectionIsCorrect_IdentifierVerification
+Output (stderr):
+deployment_structure_test.go:70: 
+Error Trace:	deployment_structure_test.go:70
+Error:      	Should be true
+Test:       	TestVerifyDeploymentEnvironmentSectionIsCorrect_IdentifierVerification
+Messages:   	Missing or invalid value for the field in the section.
+WRONG ANSWER
+
+TestVerifyDeploymentEnvironmentSectionIsCorrect_ExecutionEnvVerification
+Output (stderr):
+deployment_structure_test.go:82: 
+Error Trace:	deployment_structure_test.go:82
+Error:      	Should be true
+Test:       	TestVerifyDeploymentEnvironmentSectionIsCorrect_ExecutionEnvVerification
+Messages:   	Missing or invalid value for the field in the section.
+WRONG ANSWER
+
+TestVerifyDeploymentEnvironmentSectionIsCorrect_DeploymentEnvVerification
+Output (stderr):
+deployment_structure_test.go:94: 
+Error Trace:	deployment_structure_test.go:94
+Error:      	Should be true
+Test:       	TestVerifyDeploymentEnvironmentSectionIsCorrect_DeploymentEnvVerification
+Messages:   	Missing or invalid value for the field in the section.
+WRONG ANSWER
+
+TestVerifyDeploymentEnvironmentSectionIsCorrect_ZoneVerification
+Output (stderr):
+deployment_structure_test.go:106: 
+Error Trace:	deployment_structure_test.go:106
+Error:      	Should be true
+Test:       	TestVerifyDeploymentEnvironmentSectionIsCorrect_ZoneVerification
+Messages:   	Missing or invalid value for the field in the section.
+WRONG ANSWER
+
+TestVerifyExecutionSectionIsPresent
+Output (stderr):
+deployment_structure_test.go:110: 
+Error Trace:	deployment_structure_test.go:110
+Error:      	Expected value not to be nil.
+Test:       	TestVerifyExecutionSectionIsPresent
+Messages:   	Section is missing.
+WRONG ANSWER
+
+TestVerifyDefinedExecutionPointIsCorrect
+Output (stderr):
+deployment_structure_test.go:122: 
+Error Trace:	deployment_structure_test.go:122
+Error:      	"map[]" should have 1 item(s), but has 0
+Test:       	TestVerifyDefinedExecutionPointIsCorrect
+Messages:   	Invalid number of functions defined in the section.
+deployment_structure_test.go:125: 
+Error Trace:	deployment_structure_test.go:125
+Error:      	Should be true
+Test:       	TestVerifyDefinedExecutionPointIsCorrect
+Messages:   	Function definition is missing.
+WRONG ANSWER
+
+TestVerifyHandlerOfTheExecutionPointIsCorrect
+Output (stderr):
+deployment_structure_test.go:143: 
+Error Trace:	deployment_structure_test.go:143
+Error:      	Expected value not to be nil.
+Test:       	TestVerifyHandlerOfTheExecutionPointIsCorrect
+Messages:   	Handler for the function is missing.
+WRONG ANSWER
+
+TestVerifyTriggersSectionOfTheExecutionPointIsCorrect
+Output (stderr):
+deployment_structure_test.go:165: 
+Error Trace:	deployment_structure_test.go:165
+Error:      	Not equal: 
+            	expected: 0
+            	actual  : 2
+Test:       	TestVerifyTriggersSectionOfTheExecutionPointIsCorrect
+Messages:   	Invalid length of the triggers list for the function.
+deployment_structure_test.go:177: 
+Error Trace:	deployment_structure_test.go:177
+Error:      	Should be true
+Test:       	TestVerifyTriggersSectionOfTheExecutionPointIsCorrect
+Messages:   	Missing trigger for the function.
+deployment_structure_test.go:186: 
+Error Trace:	deployment_structure_test.go:186
+Error:      	Should be true
+Test:       	TestVerifyTriggersSectionOfTheExecutionPointIsCorrect
+Messages:   	Missing periodic trigger for the function.
+WRONG ANSWER
+
+TestVerifyTriggerMethodOfTheFunctionIsCorrect
+Output (stderr):
+deployment_structure_test.go:220: 
+Error Trace:	deployment_structure_test.go:220
+Error:      	Expected value not to be nil.
+Test:       	TestVerifyTriggerMethodOfTheFunctionIsCorrect
+Messages:   	Missing field in the trigger definition.
+WRONG ANSWER
+
+TestVerifyTriggerPathOfTheFunctionIsCorrect
+Output (stderr):
+deployment_structure_test.go:257: 
+Error Trace:	deployment_structure_test.go:257
+Error:      	Expected value not to be nil.
+Test:       	TestVerifyTriggerPathOfTheFunctionIsCorrect
+Messages:   	Missing field in the trigger definition.
+WRONG ANSWER
+
+TestVerifyPeriodicTriggerOfTheFunctionIsCorrect
+Output (stderr):
+deployment_structure_test.go:301: 
+Error Trace:	deployment_structure_test.go:301
+Error:      	Should be true
+Test:       	TestVerifyPeriodicTriggerOfTheFunctionIsCorrect
+Messages:   	Invalid value for the trigger.
+WRONG ANSWER
+
+Detected some errors.
